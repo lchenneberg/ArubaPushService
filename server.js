@@ -1,7 +1,7 @@
 var http = require('http'),
   faye = require('faye');
 
-var bayeux = new faye.NodeAdapter({mount:YOUR_MOUNT_PREFIX_GOES_HERE});
+var bayeux = new faye.NodeAdapter({mount:'/faye'});
 
 port = process.env.PORT || 3030;
 
